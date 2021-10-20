@@ -386,13 +386,29 @@ top: 759px;
 }
 #supporthd{
     position: absolute;
-    left: 35%;
+    left: 34%;
     top: 40%;
-    bottom: 8.33%;
-    
     background: #FFFFFF;
 }
-#supporttxt{
+#constructhd{
+    position: absolute;
+    left: 26%;
+    top: 40%;
+    background: #FFFFFF;
+}
+#cranehd{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    background: #FFFFFF;
+}
+#crushhd{
+    position: absolute;
+    left: 26%;
+    top: 40%;
+    background: #FFFFFF;
+}
+.servicetxt{
     position: absolute;
     width: 244px;
     height: 102px;
