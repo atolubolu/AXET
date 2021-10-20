@@ -255,11 +255,14 @@ button:active{
     width: 94.001%;
     height: fit-content;
     flex-direction: row;
+    margin-bottom: 30px;
 }
 .aboutustxt{
     display: flex;
     flex-direction: column;
     width: 50%;
+    justify-content: center;
+    /* align-items: center; */
 }
 .aboutus > img{
     width: 50%;
@@ -303,7 +306,9 @@ button:active{
 }
 .services{
     width: 100%;
-    height: fit-content;
+    height: fit-content ;
+    margin: 15px 0; 
+    margin-bottom: 250px;
 }
 .servicehead{
     position: relative;
@@ -331,6 +336,7 @@ button:active{
     font-size: 40px;
     line-height: 154.7%;
     color: #474747;
+    margin-bottom: 30px;
 }
 .toolbox{
     width: 100%;
@@ -339,13 +345,15 @@ button:active{
     justify-content: space-evenly;
 }
 .servicebox{
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 22%;
     height: 377px;
-    /* margin: 25px; */
     background: #FFFFFF;
     box-shadow: 2px 4px 26px rgba(0, 0, 0, 0.07);
     align-items: center;
+    justify-content: center;
 }
 .serviceimg{
     display: flex;
@@ -361,13 +369,14 @@ button:active{
     background: #FFFFFF;
 }
 .servicetxt{
-    position: absolute;
+    position: relative;
     height: 102px;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 154.7%;
     color: #000000;
+    width: 85%;
 }
 .workflowcntt{
     position: absolute;
