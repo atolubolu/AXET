@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
+<div class="container-fluid px-0">
     <header>
         <div class="img">
             <img src="facebook-icon.png" alt="">
             <img src="twitter-icon.svg" alt="">
             <img src="linkedin.svg" alt="">
         </div>
-       <div class="headertxt">
-        <p class="head1">Join our team. Are you ready to change the game?</p>
-        <p class="head2">Find out more <img src="arrow.png" alt=""></p>
+       <div class="headertxt nav">
+            <p class="head1 nav-item">Join our team. Are you ready to change the game?</p>
+            <p class="head2 nav-item">Find out more <img src="arrow.png" alt=""></p>
        </div>
     </header>
-   <section class="login">
+    <section class="login">     
         <article class="section1">
             <div class="pt1">
                 <img src="logo.png" alt="">
@@ -39,23 +41,25 @@
                 <p class="section1txt1">News</p>
                 <p class="section1txt1">Our Clients</p>
                 <p class="section1txt1">Contacts</p>
-                    <button>Request a call</button>
+                <button>Request a call</button>
             </div>
         </article>
-        <section class="caption"> 
-            <p>
+        <article class="section2">
+            <section class="caption"> 
                 <h1>We provide</h1>
-                industry focused services for public & private clients
-            </p>
-        </section>
-        <div class="loginbox">
-            <p class="loginboxlbl">Login</p>
-            <input type="text" placeholder="Username" class="username">
-            <input type="password" name="Password" id="loginboxpw" placeholder="Password">
-            <a href="#" id="newpw">Forgot password?</a>
-            <input type="submit" value="LOGIN" id="submit">
-            <p id="newact">Don't have an account? <a href="#">Signup</a></p>
-        </div>
+                <p>
+                    industry focused services for public & private clients
+                </p>
+            </section>
+            <div class="loginbox">
+                <p class="loginboxlbl">Login</p>
+                <input type="text" placeholder="Username" class="username">
+                <input type="password" name="Password" id="loginboxpw" placeholder="Password">
+                <a href="#" id="newpw">Forgot password?</a>
+                <input type="submit" value="LOGIN" id="submit">
+                <p id="newact">Don't have an account? <a href="#">Signup</a></p>
+            </div>
+        </article>
     </section>
     <section class="aboutus">
         <div class="aboutustxt">
@@ -111,7 +115,7 @@
         </div>
     </section>
     <section class="workflow">
-        <img src="workflow.png" alt="">
+        <!-- <img src="workflow.png" alt="" class="bg"> -->
         <div class="workflowcntt">
             <div class="wfhead">
                 <p class="head">work flow</p>
@@ -166,8 +170,139 @@
         </div>
     </section>
     <div class="testimony">
-        <p>TESTIMONIAL</p>
-        <p>Happy clients</p>
+        <p class="testhead">testimonial</p>
+        <p class="testsubhead">Happy clients</p>
+        <div class="testimonials">
+            <div class="testimonybox">
+                <img src="client-1.png" alt="Client Picture" class="client">
+                <p class="clienttestimony">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+            </div>
+            <div class="testimonybox">
+                <img src="client-2.png" alt="Client Picture" class="client">
+                <p class="clienttestimony">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+            </div>
+            <div class="testimonybox">
+                <img src="client-3.png" alt="Client Picture" class="client">
+                <p class="clienttestimony">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+            </div>
+        </div>
     </div>
+    <div class="news">
+        <p class="newshead">
+            From the News
+        </p>
+        <p id="newssub">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        </p>
+        <!-- <img src="Group 4.png" alt=""> -->
+        <div class="stuff">
+            <div>
+                <img src="news-1.png" alt="">
+                <p>Find best Construction materials</p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .
+                </p>
+                <button>Read More</button>
+            </div>
+            <div>
+                <img src="news-2.png" alt="">
+                <p>The Trend Tower Done In 2019 Summer</p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .
+                </p>
+                <button>Read More</button>
+            </div>
+            <div>
+                <img src="news-3.png" alt="">
+                <p>Big Team Already Here</p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .
+                </p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <p id="videotxt">
+            industry's standard dummy text
+        </p>
+        <div class="play">
+            <img src="play.png" alt="" class="playbutton">
+        </div>
+        <p id="startvid">
+            Watch video tour now
+        </p>
+    </div>
+    <div class="clients">
+        <p class="ourclients">Our Clients</p>
+        <!-- <img src="clients.png" alt=""> -->
+        <div class="images">
+            <img src="clients-1.png" alt="">
+            <img src="clients-2.png" alt="">
+            <img src="clients-3.png" alt="">
+            <img src="clients-4.png" alt="">
+            <img src="clients-5.png" alt="">
+            <img src="clients-6.png" alt="">
+            <img src="clients-1.png" alt="">
+        </div>
+    </div>
+    <footer>
+       <div class="footer">
+        <div>
+            <div class="divhead">About  Company</div>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .
+            </p>
+        </div>
+        <div>
+            <div class="divhead">Information</div>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Services</p>
+            <p>News</p>
+            <p>Contact Us</p>
+        </div>
+        <div>
+            <div class="divhead">Contact Info</div>
+            <div class="pictxt">
+                <img src="pinpoint.png" alt="">
+                <p>
+                    Address: 679 Grand avenu, Central Parl, NYC, NY
+                </p>
+            </div>
+            <div class="pictxt">
+                <img src="phone.png" alt="">
+                <p>
+                    Custom Support & Sale: +1-5050-607080
+                </p>
+            </div>
+            <div class="pictxt">
+                <img src="mail.png" alt="">
+                <p>
+                    mail: contact@axet.com
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="divhead">Recent news</div>
+            <p>Lorem Ipsum is simply dummy text</p>
+            <p class="date">AUGUST 28, 2019</p>
+            <p>Lorem Ipsum is simply dummy text</p>
+            <p class="date">AUGUST 28, 2019</p>
+            <p>Lorem Ipsum is simply dummy text</p>
+            <p class="date">AUGUST 28, 2019</p>
+        </div>
+       </div>
+        <div id="end">
+            © 2019 Backhoe All rights reserved.
+        </div>
+    </footer>
+</div>
 </body>
 </html>

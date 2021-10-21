@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
 body{
     font-family: 'Open sans', sans-serif;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -11,7 +11,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 46px;
     left: 0px;
@@ -27,6 +27,7 @@ header{
     font-weight: normal;
     font-size: 14px;
     padding: 0 1%;
+    margin: 0;
 }
 .head2{
     color: #FFFFFF;
@@ -34,26 +35,29 @@ header{
     font-weight: normal;
     font-size: 14px;
     padding: 0 15px;
+    margin: 0;
 }
 .headertxt{
-    width: 36%;
+    width: 40%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .img{
     display: flex;
     flex-direction: row;
     align-self: center;
     justify-content: space-between;
-    width: 5%;
+    width: 7%;
     padding: 1%;
 }
 .section1{
-    top: 42px;
+    top: -5px;
     display: flex;
     flex-direction: row;
     width: 100%;
-    position: absolute;
+    position: relative;
     height: 79px;
     background: rgba(0, 0, 0, 0.26);
     justify-content: space-between;
@@ -83,13 +87,14 @@ button:active{
 }
 .section1txt1{
     position: relative;
-    height: 18px;
+    /* height: 18px; */
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     text-transform: capitalize;
     color: #FFFFFF;
+    margin: 0;
 }
 .pt2{
     display: flex;
@@ -138,13 +143,22 @@ button:active{
     background-repeat: no-repeat;
     background-size: cover;
     height: 666px;
+    display: flex;
+    flex-direction: column;
+}
+.section2{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px;
 }
 .caption{
-    position: absolute;
-    width: 714px;
+    position: relative;
+    /* width: 50%; */
     height: fit-content;
-    left: 68px;
-    top: 212px;
     font-style: normal;
     font-weight: 300;
     font-size: 50px;
@@ -154,14 +168,12 @@ button:active{
 .caption > h1{
     font-weight: 100;
     margin: 0;
-    font-size: 90px;
+    font-size: 66px;
 }
 .loginbox{
     position: relative;
     width: fit-content;
     height: 365px;
-    left: 68%;
-    top: 212px;
     display: flex;
     flex-direction: column;
     background: rgba(55, 55, 55, 0.79);
@@ -219,6 +231,7 @@ button:active{
     color: #EE2B7A;
     margin-left: 53%;
     margin-bottom: 15px;
+    text-decoration: none;
 }
 #submit{
     width: 267px;
@@ -249,13 +262,17 @@ button:active{
     font-style: normal;
     text-decoration: none;
 }
+.news > img{
+    width: 88%;
+}
 .aboutus{
     padding: 3%;
     display: flex;
-    width: 94.001%;
+    width: 100%;
     height: fit-content;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin: 30px 0;
+
 }
 .aboutustxt{
     display: flex;
@@ -270,8 +287,7 @@ button:active{
 }
 .title{
     position: relative;
-    width: 160px;
-    height: 22px;
+    /* width: 160px; */
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
@@ -283,8 +299,7 @@ button:active{
 }
 #aboutushead{
     position: relative;
-    width: 214px;
-    height: 62px;
+    /* width: 214px; */
     font-family: Open Sans;
     font-style: normal;
     font-weight: 300;
@@ -296,7 +311,6 @@ button:active{
 .aboutuscntt{
     position: relative;
     width: 75%;
-    height: 102px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 300;
@@ -383,20 +397,25 @@ button:active{
     width: 100%;
 }
 .workflow{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: fit-content;
+    height: 400px;
     background-color: rgba(57, 7, 70, 0.74);
     mix-blend-mode: multiply;
+    background-image: url(workflow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
 }
-.workflow > img{
+/* .workflow > img{
     width: 100%;
     height: auto;
     mix-blend-mode: lighten;
-}
+} */
 .wfhead{
     position: relative;
     display: flex;
@@ -449,10 +468,11 @@ button:active{
     flex-direction: column;
     align-items: center;
     height: fit-content;
+    width: 20%;
 }
 .boxhd{
     position: relative;
-    width: 141px;
+    width: fit-content;
     height: 28px;
     font-family: Open Sans;
     font-style: normal;
@@ -473,4 +493,369 @@ button:active{
     line-height: 154.7%;
     text-align: center;
     color: #FFFFFF;
+}
+.testimony{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.testhead{
+    position: relative;
+    width: 92px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 154.7%;
+    color: #995AAA;
+    text-transform: uppercase;
+}
+.testsubhead{
+    position: relative;
+    width: 247px;
+    height: 62px;
+    /* left: 527px; */
+    /* top: 2530px; */
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 154.7%;
+    color: #474747;
+}
+.testimonybox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    width: 324px;
+    height: 377px;
+    background: #FFFFFF;
+    border: 1px solid #F9F9F9;
+    box-sizing: border-box;
+    box-shadow: 13px 24px 44px rgba(0, 0, 0, 0.07);
+    padding: 50px;
+}
+.client{
+    border-radius: 50%;
+}
+.images{
+   margin: 0;
+   display: flex;
+   flex-direction: row;
+   max-width: 100%; 
+}
+.images > img{
+    width: 20%;
+    height: auto;
+}
+.clienttestimony{
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 154.7%;
+    color: #000000;
+}
+.testimonials{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.newshead{
+    position: relative;
+    width: 273px;
+    height: 62px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 154.7%;
+    color: #474747;
+}
+#newssub{
+    position: relative;
+    width: 476px;
+    height: 46px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 154.7%;
+    color: #000000;
+    
+}
+.stuff{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 95%;
+}
+.stuff > div{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+}
+.stuff > div > p{
+    text-align: center;
+    position: relative;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 154.7%;
+}
+.stuff > div > img{
+    width: 100%;
+}
+.video{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(truck.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 433px;
+    display: flex;
+    flex-direction: column;
+}
+#videotxt{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 154.7%;
+}
+#startvid{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 154.7%;
+    margin: 15px 0;
+}
+.play{
+    padding: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 10px solid rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.playbutton{
+    position: relative;
+    background-color: #fff;
+}
+.clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    top: 360px;
+    margin: 40px 0;
+    height: fit-content;
+}
+.clients > img{
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+}
+.ourclients{
+    position: relative;
+    width: 201px;
+    height: 62px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 154.7%;
+    color: #474747;
+    margin: 50px 0;
+}
+.footer{
+    bottom: 0;
+    background: #333333;
+    width: 100%;
+    max-width: 100%;
+    height: fit-content;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
+    position: relative;
+    color: #FFFFFF;
+    margin-top: 70px;
+}
+.footer > div{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.footer > div >p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 154.7%;
+}
+#end{
+    width: 100%;
+    text-align: center;
+    color:  #474747;
+    ;
+}
+.divhead{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 154.7%;
+    margin: 20px 0;
+}
+.date{
+    border-bottom: 1px solid white;
+}
+.pictxt{
+    display: flex;
+    flex-direction: row;
+}
+.pictxt > img{
+    margin-right: 10px;
+    width: min-content;
+    height: min-content;
+}
+@media screen and (max-width: 768px) {
+    .login{
+        height: fit-content;
+    }
+    .img{
+        width: 10%;
+    }
+    .headertxt{
+        width: 60%;
+    }
+    .section2{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .caption{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .caption > h1{
+        font-size: 64px;
+    }
+    .caption > p{
+        font-size: 30px;
+        line-height: 25px;
+    }
+    .aboutus{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutustxt{
+        width: 100%;
+    }
+    .title{
+        font-size: 26px;
+    }
+    #aboutushead{
+        font-size: 52px;
+    }
+    .aboutuscntt{
+        font-size: 18px;
+    }
+    .aboutus > img {
+        width: 100%;
+    } 
+    .toolbox{
+        flex-wrap: wrap;
+    }
+    .servicebox{
+        width: 40%;
+        margin: 20px 0;
+    }
+    .workflow{
+        height: 666px;
+    }
+    .workflowing{
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 50%;
+        margin: 20px 0;
+    }
+    .bg{
+        width: 150%;
+        height: auto;
+    }
+    .testimonials{
+        flex-wrap: wrap;
+    }
+    .testimonybox{
+        margin: 20px 0;
+    }
+    .testhead{
+        font-size: 18px;
+    }
+    .footer{
+        flex-wrap: wrap;
+    }
+    .footer > div{
+        width: 40%;
+    }
+    .stuff{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .stuff > div{
+        width: 40%;
+        margin: 20px 0;
+    }
+    .images > img{
+        width: 14.3%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 375px) {
+    .servicebox{
+        width: 80%;
+    }
+    .box{
+        width: 80%;
+    }
+    .workflow{
+        height: 1200px;
+    }
+    .stuff > div{
+        width: 80%;
+    }
+    #videotxt{
+        font-size: 25px;
+    }
+    .images{
+        flex-direction: column;
+    }
+    .images > img{
+        width: auto;
+    }
+    .footer > div{
+        width: 60%;
+    }
 }
