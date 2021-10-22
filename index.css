@@ -537,7 +537,6 @@ button:active{
    display: flex;
    flex-direction: row;
    max-width: 100%; 
-   flex-wrap: wrap;
    align-items: center;
    justify-content: center
 }
@@ -823,6 +822,9 @@ button:active{
         width: 40%;
         margin: 20px 0;
     }
+    .images{
+        flex-wrap: wrap;
+    }
     .images > img{
         width: 14.3%;
         height: auto;
@@ -846,6 +848,9 @@ button:active{
     }
     .images{
         flex-direction: column;
+    }
+    .images{
+        flex-wrap: wrap;
     }
     .images > img{
         width: auto;
