@@ -740,6 +740,9 @@ button:active{
     .img{
         width: 10%;
     }
+    #newssub{
+        font-size: 16px;
+    }
     .headertxt{
         width: 60%;
     }
@@ -819,8 +822,11 @@ button:active{
         flex-direction: column;
     }
     .stuff > div{
-        width: 40%;
+        width: 75%;
         margin: 20px 0;
+    }
+    .stuf > div > p{
+        font-size: 18px;
     }
     .images{
         flex-wrap: wrap;
