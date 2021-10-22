@@ -38,7 +38,8 @@ header{
     margin: 0;
 }
 .headertxt{
-    width: 40%;
+    width: 35%;
+    /* height: 18px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -51,6 +52,7 @@ header{
     justify-content: space-between;
     width: 7%;
     padding: 1%;
+    margin: 0 5px;
 }
 .section1{
     top: -5px;
@@ -69,14 +71,12 @@ button{
     font-size: 14px;
     line-height: 19px;
     position: relative;
-    width: 137px;
-    height: 34px;
     justify-self: end;
-    /* top: 20px; */
     background: #EE2B7A;
     border-radius: 5px;
     color: #FFFFFF;
     border: none;
+    padding: 10px;
 }
 button:hover{
     cursor: pointer;
@@ -113,36 +113,31 @@ button:active{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 90%;
 }
 #needhelp{
-    width: 194px;
-    height: 19px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
-    margin: 15px 0;
-    margin-bottom: 7px;
+    margin: 0;
+    /* margin-bottom: 7px; */
 }
 #number{
-    width: 124px;
-    height: 26px;
     font-style: normal;
     font-weight: 600;
     font-size: 19px;
     line-height: 26px;
     color: #FFC42D;
-    margin: 7px 0;
+    margin: 0;
 }
 .login{
     background-image: url(background.png);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 666px;
     display: flex;
     flex-direction: column;
 }
@@ -153,11 +148,11 @@ button:active{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 90px;
+    padding: 35px;
 }
 .caption{
     position: relative;
-    /* width: 50%; */
+    width: 50%;
     height: fit-content;
     font-style: normal;
     font-weight: 300;
@@ -193,8 +188,7 @@ button:active{
     color: #FFFFFF;
 }
 .username{
-    width: 248px;
-    height: 45px;
+    width: 100%;
     border: none;
     background: #FFFFFF;
     border-radius: 4px;
@@ -203,16 +197,16 @@ button:active{
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
-    padding: 0 0 0 19px;
+    padding: 15px 0;
+    padding-left: 19px;
     margin: 15px 0;
 }       
 #loginboxpw{
-    width: 248px;
-    height: 45px;
+    width: 100%;
     background: #FFFFFF;
     border-radius: 4px;
     border: none;
-    padding: 0 0 0 19px;
+    padding: 15px 0 15px 19px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -256,6 +250,7 @@ button:active{
     font-size: 12px;
     line-height: 16px;
     color: #F8F5F5;
+    margin: 10px 0;
 }
 #newact > a{
     color: #EE2B7A;
@@ -271,7 +266,7 @@ button:active{
     width: 100%;
     height: fit-content;
     flex-direction: row;
-    margin: 30px 0;
+    margin: 80px 0;
 
 }
 .aboutustxt{
@@ -411,11 +406,6 @@ button:active{
     background-size: cover;
     margin-bottom: 30px;
 }
-/* .workflow > img{
-    width: 100%;
-    height: auto;
-    mix-blend-mode: lighten;
-} */
 .wfhead{
     position: relative;
     display: flex;
@@ -500,6 +490,7 @@ button:active{
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 70px 0;
 }
 .testhead{
     position: relative;
@@ -511,18 +502,18 @@ button:active{
     line-height: 154.7%;
     color: #995AAA;
     text-transform: uppercase;
+
 }
 .testsubhead{
     position: relative;
     width: 247px;
     height: 62px;
-    /* left: 527px; */
-    /* top: 2530px; */
     font-style: normal;
     font-weight: 300;
     font-size: 40px;
     line-height: 154.7%;
     color: #474747;
+    margin: 20px 0 30px;
 }
 .testimonybox{
     display: flex;
@@ -546,10 +537,14 @@ button:active{
    display: flex;
    flex-direction: row;
    max-width: 100%; 
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center
 }
 .images > img{
     width: 20%;
     height: auto;
+    margin: 10px;
 }
 .clienttestimony{
     text-align: center;
@@ -583,11 +578,10 @@ button:active{
     font-size: 40px;
     line-height: 154.7%;
     color: #474747;
+    margin: 20px 0 10px;
 }
 #newssub{
     position: relative;
-    width: 476px;
-    height: 46px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 300;
@@ -719,7 +713,7 @@ button:active{
     width: 100%;
     text-align: center;
     color:  #474747;
-    ;
+    margin: 10px 0;
 }
 .divhead{
     font-weight: 600;
@@ -733,6 +727,7 @@ button:active{
 .pictxt{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .pictxt > img{
     margin-right: 10px;
